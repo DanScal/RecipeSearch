@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/diet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/serving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/diet"
+        android:layout_marginTop="79dp"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/serving"
+        android:layout_marginTop="81dp"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:id="@+id/diet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/serving_text"
+        android:layout_marginTop="23dp"
+        android:text="Diet Restriction" />
+
+    <TextView
+        android:id="@+id/serving_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Serving Restriction" />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/diet_text"
+        android:layout_below="@+id/serving"
+        android:layout_marginTop="36dp"
+        android:text="Preperation Time" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:text="Search" />
+
+</RelativeLayout>
